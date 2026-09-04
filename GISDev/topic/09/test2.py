@@ -4,4 +4,3 @@ newFile.write("Hello world\n")
 newFile.write("Hello world 2\n")
 newFile.write("Hello world 3\n")
 newFile.close()
-

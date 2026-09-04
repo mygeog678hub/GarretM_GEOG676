@@ -1,0 +1,16 @@
+def print_vertically(a, b, c, n):
+    count = 3
+    print(a)
+    print(b)
+    while count <= n:
+        print(c)
+        a = b
+        b = c
+        c = (a + b)
+        count += 1
+
+a = 1
+b = 1
+c = (a + b)
+n = int(input("Choose a nth number in the sequence "))
+print_vertically(a, b, c, n)
