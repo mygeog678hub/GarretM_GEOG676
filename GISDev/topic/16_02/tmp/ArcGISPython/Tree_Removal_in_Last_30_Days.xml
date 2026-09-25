@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <origin/>
+                <pubdate>20210713</pubdate>
+                <title>Tree Removal in Last 30 Days</title>
+                <geoform>vector digital data</geoform>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>Data provided here are from the DC's 311 service request center. They represent all service requests such as abandoned automobiles, parking meter repair and bulk trash pickup. Requests are received by the Office of Unified Communications (OUC) through the Mayor's Call Center (311), citizens web intake at https://311.dc.gov, electronic and US mail service or via other methods of communication. The Office of Unified Communications (OUC)oversees the designated call center for all 311 calls and for all District 911 calls. Please also visit the DC 311 Service Request Mapwhich allows the public to see service requests in the last 30 days. Users can view requests by Ward within charts. Just set the area filter to select service requests. Click on a service request to view details.</abstract>
+            <purpose>Requests submitted by the public for District of Columbia city services and information. The data is presented by year and comes from the Office of Unified Communications.</purpose>
+            <supplinf>There are inconsistencies in the data prior to 2016 due to multiple system platforms and system migrations.  From 2016 to present, data is consistent and uniform.  </supplinf>
+        </descript>
+        <status>
+            <progress>In work</progress>
+            <update>Daily</update>
+        </status>
+        <spdom>
+            <bounding>
+                <westbc>-77.22575918267708</westbc>
+                <eastbc>-76.81253535472399</eastbc>
+                <northbc>39.00299999999933</northbc>
+                <southbc>38.786658888995184</southbc>
+            </bounding>
+        </spdom>
+        <keywords>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>resident, 311, service requests, public service, call center, OUC, DC GIS</themekey>
+            </theme>
+            <theme>
+                <themekt>ISO 19115 Topic Categories</themekt>
+                <themekey>society</themekey>
+                <themekey>transportation</themekey>
+                <themekey>utilitiesCommunication</themekey>
+            </theme>
+            <place>
+                <placekt>None</placekt>
+                <placekey>Washington D.C.</placekey>
+                <placekey>DC</placekey>
+                <placekey>District of Columbia</placekey>
+            </place>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>This work is licensed under a Creative Commons Attribution 4.0 International License.</useconst>
+        <ptcontac>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>D.C. Office of the Chief Technology Officer </cntorg>
+                    <cntper>GIS Data Coordinator</cntper>
+                </cntorgp>
+                <cntpos>GIS Data Coordinator</cntpos>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>200 I Street SE, 5th Floor</address>
+                    <city>Washington</city>
+                    <state>DC</state>
+                    <postal>20003</postal>
+                </cntaddr>
+                <cntvoice>(202) 727-2277</cntvoice>
+                <cntfax>(202) 727-5660</cntfax>
+                <cntemail>dcgis@dc.gov</cntemail>
+                <hours>8:30 am - 5:00 pm</hours>
+            </cntinfo>
+        </ptcontac>
+        <datacred>https://ouc.dc.gov; https://octo.dc.gov</datacred>
+    </idinfo>
+    <spdoinfo>
+        <direct>Vector</direct>
+        <ptvctinf>
+            <sdtsterm>
+                <sdtstype>Entity point</sdtstype>
+                <ptvctcnt>3008811</ptvctcnt>
+            </sdtsterm>
+        </ptvctinf>
+    </spdoinfo>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>ServiceRequestPt</enttypl>
+                <enttypd>List of 311 service requests</enttypd>
+                <enttypds>DC OCTO</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>OBJECTID</attrlabl>
+                <attrdef>Internal feature number.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                                        
+                    <udom>Sequential unique whole numbers that are automatically generated.</udom>
+                                    
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SERVICECODE</attrlabl>
+                <attrdef>The unique identifier for the service request type.</attrdef>
+                <attrdefs>OUC</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>SERVICECODEDESCRIPTION</attrlabl>
+                <attrdef>The human readable name of the service request type.</attrdef>
+                <attrdefs>OUC</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>SERVICETYPECODEDESCRIPTION</attrlabl>
+                <attrdef>A full description of the request or report submitted.</attrdef>
+                <attrdefs>OUC</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>ORGANIZATIONACRONYM</attrlabl>
+                <attrdef>Agency code of the service requested e.g. CFSA.</attrdef>
+                <attrdefs>OUC</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>ADDDATE</attrlabl>
+                <attrdef>Date and time when the service request was made.</attrdef>
+                <attrdefs>OUC</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>RESOLUTIONDATE</attrlabl>
+                <attrdef>Date and time when the service request was resolved.</attrdef>
+                <attrdefs>OUC</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>SERVICEDUEDATE</attrlabl>
+                <attrdef>The date and time when the service request can be expected to be fulfilled. This may be based on a service-specific service level agreement.</attrdef>
+                <attrdefs>OUC</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>SERVICEORDERDATE</attrlabl>
+                <attrdef>Date and time when the service request was made.</attrdef>
+                <attrdefs>OUC</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>INSPECTIONFLAG</attrlabl>
+                <attrdef>Indicates if the latest updated completed activity was an inspection.</attrdef>
+                <attrdefs>OUC</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>INSPECTIONDATE</attrlabl>
+                <attrdef>Date of latest completed activity.</attrdef>
+                <attrdefs>OUC</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>SERVICEORDERSTATUS</attrlabl>
+                <attrdef>Current status of the service request.</attrdef>
+                <attrdefs>OUC</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>STATUS_CODE</attrlabl>
+                <attrdef>Current status of the service request. This field was replaced by SERVICEORDERSTATUS for requests resolved as of 6/15/19. Prior to this date, one or both fields may be used.</attrdef>
+                <attrdefs>OUC</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>SERVICEREQUESTID</attrlabl>
+                <attrdef>Unique ID of the service request created.</attrdef>
+                <attrdefs>OUC</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>PRIORITY</attrlabl>
+                <attrdef>Priority of the service request.</attrdef>
+                <attrdefs>OUC</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>STREETADDRESS</attrlabl>
+                <attrdef>Address of the service requested.</attrdef>
+                <attrdefs>DC OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>XCOORD</attrlabl>
+                <attrdef>Master Address Repository (MAR) X Coordinates (Maryland State Plane Meters).</attrdef>
+                <attrdefs>DC OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>YCOORD</attrlabl>
+                <attrdef>Master Address Repository (MAR) Y Coordinates (Maryland State Plane Meters).</attrdef>
+                <attrdefs>DC OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>LATITUDE</attrlabl>
+                <attrdef>Master Address Repository (MAR) latitude (decimal degrees).</attrdef>
+                <attrdefs>DC OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>LONGITUDE</attrlabl>
+                <attrdef>Master Address Repository (MAR) longitude (decimal degrees).</attrdef>
+                <attrdefs>DC OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>ZIPCODE</attrlabl>
+                <attrdef>United States Postal Service ZIP code.</attrdef>
+                <attrdefs>DC OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>MARADDRESSREPOSITORYID</attrlabl>
+                <attrdef>Master Address Repository (MAR) Geocoder Unique Address Identifier.</attrdef>
+                <attrdefs>DC OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>WARD</attrlabl>
+                <attrdef>Washington DC electoral ward location.</attrdef>
+                <attrdefs>DC OCTO</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>DETAILS</attrlabl>
+                <attrdef>Information about the action expected to fulfill the request or otherwise address the information reported.</attrdef>
+                <attrdefs>OUC</attrdefs>
+            </attr>
+        </detailed>
+    </eainfo>
+    <distinfo>
+        <distrib>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>D.C. Office of the Chief Technology Officer </cntorg>
+                    <cntper>GIS Data Coordinator</cntper>
+                </cntorgp>
+                <cntpos>GIS Data Coordinator</cntpos>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>200 I Street SE, 5th Floor</address>
+                    <city>Washington</city>
+                    <state>DC</state>
+                    <postal>20003</postal>
+                </cntaddr>
+                <cntvoice>(202) 727-2277</cntvoice>
+                <cntfax>(202) 727-5660</cntfax>
+                <cntemail>dcgis@dc.gov</cntemail>
+                <hours>8:30 am - 5:00 pm</hours>
+            </cntinfo>
+        </distrib>
+        <distliab>See access and use constraints information.</distliab>
+        <custom>DC datasets can be downloaded from "http://opendata.dc.gov".</custom>
+    </distinfo>
+    <metainfo>
+        <metd>20210713</metd>
+        <metc>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>D.C. Office of the Chief Technology Officer </cntorg>
+                    <cntper>GIS Data Coordinator</cntper>
+                </cntorgp>
+                <cntpos>GIS Data Coordinator</cntpos>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>200 I Street SE, 5th Floor</address>
+                    <city>Washington</city>
+                    <state>DC</state>
+                    <postal>20003</postal>
+                </cntaddr>
+                <cntvoice>(202) 727-2277</cntvoice>
+                <cntfax>(202) 727-5660</cntfax>
+                <cntemail>dcgis@dc.gov</cntemail>
+                <hours>8:30 am - 5:00 pm</hours>
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>
