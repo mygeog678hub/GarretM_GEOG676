@@ -1,4 +1,6 @@
-# GarretM_GEOG676  <body>
+# GarretM_GEOG676  
+<html>
+<body>
     <h2>GEOG6786 Lab 5</h2>
     <p>I have completed Lab 5</p>
     <p>My lab5 folder can be found at the following link:<p>

@@ -1,4 +1,5 @@
-# GarretM_GEOG676<html>
+# GarretM_GEOG676
+<html>
   <body>
     <h2>GEOG6786 Lab 4</h2>
     <p>I have completed Lab 4</p>
