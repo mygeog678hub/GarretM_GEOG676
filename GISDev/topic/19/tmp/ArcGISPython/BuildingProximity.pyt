@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import arcpy
+import time
 
 
 class Toolbox:
@@ -58,14 +59,35 @@ class BuildingProximity:
         return
 
     def updateMessages(self, parameters):
-        """Modify the messages created by internal validation for each tool
-        parameter. This method is called after internal validation."""
+        for param in parameters:
+            if param.name == "buildingNumber":
+                buildingNum = param.value
+                campus = r"H:/DevSource/GarretM_GEOG676/GISDev/topic/18/tmp/ArcGISPython/Campus.gdb"
+                where_clause = "Number = '%s'" % buildingNum
+                cursor = arcpy.SearchCursor(campus + "/TAMU_structures", where_clause=where_clause)
+                count = 0
+                for row in cursor:
+                    count += 1
+                if count == 0:
+                    param.setErrorMessage("Cannot find building %s in Structures" % buildingNum)
         return
 
     def execute(self, parameters, messages):
         """The source code of the tool."""
-        campus = r"H:/DevSource/GarretM_GEOG676/GISDev/topic/18/tmp/ArcGISPython/Campus.gdb"
+        # Define our progressor variables
+        readTime = 2.5
+        start = 0
+        maximum = 100
+        step = 25
 
+        # Setup the progressor
+        arcpy.SetProgressor("step", "Checking building proximity...", start, maximum, step)        
+        time.sleep(readTime)
+        # Add message to the results pane
+        arcpy.AddMessage("Checking building proximity...")
+
+        campus = r"H:/DevSource/GarretM_GEOG676/GISDev/topic/18/tmp/ArcGISPython/Campus.gdb"    
+        
         # Setup our user input variables
         buildingNumber_input = parameters[0].valueAsText
         bufferSize_input = int(parameters[1].value)
@@ -78,6 +100,12 @@ class BuildingProximity:
         structures = campus + "/TAMU_structures"
         cursor = arcpy.SearchCursor(structures, where_clause=where_clause)
         shouldProceed = False
+
+        # Increment the progressor and change the label; add message to the results pane
+        arcpy.SetProgressorPosition(start + step)
+        arcpy.SetProgressorLabel("Validating building number once more...")
+        time.sleep(readTime)
+        arcpy.AddMessage("Validating building number once more...")
 
         for row in cursor:
             if row.getValue("Number") == buildingNumber_input:

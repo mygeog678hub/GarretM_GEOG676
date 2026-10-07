@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: Wednesday, October 7, 2026 1:33:19 AM</msg><msg code="0" type="0">Validating Project file...</msg><msg code="0" type="0">Finding your map layer...</msg><msg code="0" type="0">Calculating and classifying...</msg><msg code="0" type="0">Cleaning up...</msg><msg code="0" type="0">Finish Generating Layer...</msg><msg code="0" type="0">Saving...</msg><msg code="0" type="0">Saving...</msg><msg code="0" type="0">Saving...</msg><msg code="1" type="100">Traceback (most recent call last):
+﻿  File "H:\DevSource\GarretM_GEOG676\lab_6\grad_colors.pyt", line 154, in execute
+    project.save()
+    ~~~~~~~~~~~~^^
+﻿  File "C:\Program Files\ArcGIS\Pro\Resources\ArcPy\arcpy\_mp.py", line 1357, in save
+    return convertArcObjectToPythonObject(self._arc_object.save(*gp_fixargs((), True)))
+                                          ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+﻿OSError: H:\DevSource\GarretM_GEOG676\lab_6\GraduatedColorRenderer_Lab6_MGarret\GraduatedColorRenderer_Lab6_MGarret.aprx
+﻿</msg><msg code="-2147467259" type="100">Failed to execute (GraduatedColorsRenderer).</msg><msg code="0" type="3">Failed at Wednesday, October 7, 2026 1:33:36 AM (Elapsed Time: 17.70 seconds)</msg></messages>
