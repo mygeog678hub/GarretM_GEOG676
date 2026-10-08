@@ -1,3 +1,23 @@
 .vscode/
 __pycache__/
 *.pyc
+# Lab 7 Raster - downloaded source data
+/lab_7_Raster/dem/dem_30m.tif
+/lab_7_Raster/landsat4/blue.tif
+/lab_7_Raster/landsat4/green.tif
+/lab_7_Raster/landsat4/lwir.tif
+/lab_7_Raster/landsat4/nir08.tif
+/lab_7_Raster/landsat4/red.tif
+/lab_7_Raster/landsat4/swir16.tif
+/lab_7_Raster/landsat4/swir22.tif
+
+# Lab 7 Raster - generated raster data and auxiliary files
+/lab_7_Raster/dem/*.tif
+/lab_7_Raster/dem/*.tfw
+/lab_7_Raster/dem/*.xml
+/lab_7_Raster/dem/*.ovr
+/lab_7_Raster/dem/*.vat.*
+/lab_7_Raster/landsat4/*.tif
+/lab_7_Raster/landsat4/*.tfw
+/lab_7_Raster/landsat4/*.xml
+/lab_7_Raster/landsat4/*.ovr
