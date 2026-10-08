@@ -19,4 +19,5 @@
 | [lab_4](lab_4/README.md) |
 | [lab_5](lab_5/README.md) | 
 | [lab_6](lab_6/README.md) |
-| [lab_7](lab_7/README.md) |
+| [lab_7_Raster](lab_7_Raster/README.md) |
+| [lab_7_ACES](lab_7_ACES/README.md) |
